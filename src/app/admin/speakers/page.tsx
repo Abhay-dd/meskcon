@@ -279,7 +279,7 @@ export default function AdminSpeakersPage() {
                     <Pencil size={14} />
                   </button>
                   <button
-                    onClick={() => handleDelete(speaker._id, speaker.name)}
+                    onClick={() => handleDelete(speaker._id || "", speaker.name)}
                     className="p-1.5 rounded-lg bg-red-500/10 hover:bg-red-500/20 text-red-400 transition-colors"
                     title="Delete speaker"
                   >

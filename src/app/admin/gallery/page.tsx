@@ -207,7 +207,7 @@ export default function AdminGalleryPage() {
 
                 <div className="flex items-center justify-end pt-3 border-t border-white/5 mt-3">
                   <button
-                    onClick={() => handleDelete(item._id, item.title)}
+                    onClick={() => handleDelete(item._id || "", item.title)}
                     className="p-1.5 rounded-lg bg-red-500/10 hover:bg-red-500/20 text-red-400 transition-colors text-xs flex items-center gap-1"
                     title="Delete media"
                   >

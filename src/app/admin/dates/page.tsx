@@ -261,7 +261,7 @@ export default function AdminDatesPage() {
                   <Pencil size={15} />
                 </button>
                 <button
-                  onClick={() => handleDelete(d._id, d.title)}
+                  onClick={() => handleDelete(d._id || "", d.title)}
                   className="p-2 rounded-xl bg-red-500/10 hover:bg-red-500/20 text-red-400 transition-colors"
                   title="Delete date"
                 >

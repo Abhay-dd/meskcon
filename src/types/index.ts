@@ -61,7 +61,7 @@ export interface MediaItem {
   title: string;
   mediaType: "image" | "video";
   url: string;
-  public_id: string;
+  public_id?: string;
   thumbnailUrl?: string;
   category: string;
   eventYear: string;
